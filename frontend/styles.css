@@ -1,0 +1,191 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    color: #333;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #575757;
+}
+
+.sidebar .footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+header .profile {
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+#recent-folders, #notes, #trash {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.folder-section, .note-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.folder, .note {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    width: calc(23% - 10px);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.folder:hover, .note:hover {
+    background-color: #e0e0e0;
+}
+
+.folder.new-folder, .note.new-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #007bff;
+    background-color: #dff0ff;
+}
+
+.folder-name, .note-title {
+    font-weight: 600;
+}
+
+.folder-date, .note-date {
+    color: #666;
+    font-size: 12px;
+}
+
+.note-actions {
+    margin-top: 10px;
+}
+
+.note-actions button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.note-actions button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .folder, .note {
+        width: calc(100% - 10px);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+#calendar {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul li a {
+    cursor: pointer;
+}
+.sidebar .sidebar-image {
+    margin: 20px 0;
+}
+
+.sidebar .sidebar-image img {
+    width: 100%;
+    border-radius: 8px;
+}

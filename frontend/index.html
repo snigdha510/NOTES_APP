@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">MINO NOTES APP</div>
+        <nav>
+            <ul>
+                <li><a href="#" id="calendar-link">Calendar</a></li>
+                <li><a href="#" id="trash-link">Trash</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <div class="sidebar-image">
+            <img src="../unnamed.png" alt="Description of Image">
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 All rights reserved.</p>
+        </div>
+    </div>
+    <div class="content">
+        <header>
+            <h1>My Notes</h1>
+            <div class="profile">Snigdha</div>
+        </header>
+        <main>
+            <section id="recent-folders">
+                <h2>Folders</h2>
+                <div class="folder-section" id="folder-list">
+                    <div class="folder new-folder" id="add-folder">New Folder</div>
+                </div>
+            </section>
+            <section id="notes">
+                <h2>Notes</h2>
+                <div class="note-section" id="note-list">
+                    <div class="note new-note" id="add-note" draggable="true">New Note</div>
+                </div>
+            </section>
+            <section id="trash" class="hidden">
+                <h2>Trash</h2>
+                <div class="note-section" id="trash-list"></div>
+            </section>
+            <section id="calendar" class="hidden">
+                <h2>Notes by Date</h2>
+                <div class="note-section" id="date-notes-list"></div>
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
