@@ -1,6 +1,9 @@
 # Notes App
 
 This is a simple notes application built using HTML, CSS, JavaScript for the front end and Node.js with MongoDB for the backend. It allows users to create, edit, delete notes, organize them into folders, and view notes by date.
+<img width="1496" alt="Screenshot 2024-06-10 at 1 48 24 AM" src="https://github.com/snigdha510/NOTES_APP/assets/100710845/68f2001c-24e8-4e40-a76b-12bac1d84d80">
+
+
 
 ## Installation
 
